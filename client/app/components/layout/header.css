@@ -1,0 +1,181 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.prox {
+  width: auto;
+  height: 40px;
+}
+
+.primary_cta {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  border: none;
+  background-color: #d97706;
+  color: #fff;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  font-size: 12px;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.7s ease;
+}
+
+.primary_cta:hover {
+  background-color: #92400e;
+}
+
+.bolt {
+  width: 20px;
+  height: 20px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials Link {
+  text-decoration: none;
+}
+
+.socials Link Image {
+  width: 70px;
+  height: 70px;
+}
+
+.menu {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.menu.open .menu-icon {
+  display: none;
+}
+
+.menu.open .close-icon {
+  display: block;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.close-icon {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-nav {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 2px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transform: translateY(-30px);
+  opacity: 0;
+  pointer-events: none;
+  padding: 20px;
+  transition: all 0.7s ease;
+}
+
+.mobile-nav.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.mobile-nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+}
+
+.mobile-nav-item span {
+  color: #1a1a17;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.mobile-nav-item:hover span {
+  color: #d97706;
+}
+
+nav .twitter {
+  width: 20px;
+  height: 20px;
+}
+
+nav .instagram,
+.reddit {
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-cta {
+  background-color: #d97706;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+}
+
+.mobile-cta:hover {
+  background-color: #92400e;
+}
+
+.mobile-cta .bolt {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .socials {
+    display: none;
+  }
+
+  .primary_cta {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+}
