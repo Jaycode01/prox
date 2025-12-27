@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="main-content">
           <h1 className="heading">Send a message through time</h1>
           <p className="sub-heading">
-            Document your struggles, your wins, your journey—then let your
+            Document your struggles, your wins, your journey — then let your
             future self rediscover them. Simple. Personal. Unforgettable.
           </p>
 
