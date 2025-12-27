@@ -1,4 +1,5 @@
 import "./hero.css";
+import { FaCaretUp } from "react-icons/fa";
 import Image from "next/image";
 
 const Hero = () => {
@@ -12,6 +13,19 @@ const Hero = () => {
           width={300}
           height={500}
         />
+
+        <div className="main-content">
+          <h1 className="heading">Send a message through time</h1>
+          <p className="sub-heading">
+            Document your struggles, your wins, your journey—then let your
+            future self rediscover them. Simple. Personal. Unforgettable.
+          </p>
+
+          <button type="button">
+            <span>Join Prox</span>
+            <FaCaretUp className="caret-right" />
+          </button>
+        </div>
 
         <div className="preview-card">
           <div className="top">
@@ -50,25 +64,22 @@ const Hero = () => {
             <input type="text" placeholder="Dear 2026, did we make it?" />
           </div>
         </div>
-      </div>
-      <svg width="200" height="150" viewBox="0 0 200 150">
-        {/* Curved line */}
-        <path
-          d="M 150 20 Q 100 50, 50 120"
-          stroke="#000"
-          strokeWidth="3"
-          fill="none"
-        />
 
-        {/* Arrow head */}
-        <path
-          d="M 50 120 L 45 105 M 50 120 L 65 115"
-          stroke="#000"
-          strokeWidth="3"
-          fill="none"
-          strokeLinecap="round"
-        />
-      </svg>
+        <div className="descriptive-words">
+          <p className="wrong">Overwhelming</p>
+          <p className="right">Simple</p>
+        </div>
+
+        <div className="earth-container">
+          <Image
+            src="/images/earth.png"
+            width={100}
+            height={100}
+            alt="-"
+            className="earth"
+          />
+        </div>
+      </div>
     </section>
   );
 };
