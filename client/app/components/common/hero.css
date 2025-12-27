@@ -1,0 +1,140 @@
+.hero {
+  min-height: calc(100vh - 90px);
+  background-color: white;
+  position: relative;
+  padding: 20px;
+}
+
+.hero-img {
+  position: absolute;
+  width: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.preview-card {
+  width: 100%;
+  position: absolute;
+  bottom: 200px;
+  left: 60%;
+  transform: translateX(-50%);
+  max-width: 350px;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.103);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 20px;
+}
+
+.preview-card .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview-card .top .date-input {
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  padding: 7px 15px;
+  border-radius: 5px;
+  pointer-events: none;
+  outline: none;
+}
+
+.preview-card .top .options {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.preview-card .top .option {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  outline: none;
+  padding: 3px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  font-family: inherit;
+  border-radius: 5px;
+}
+
+.preview-card .top .option div {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.preview-card .top .option-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.preview-card .top .dropdown-icon {
+  width: 15px;
+  height: 15px;
+  transform: rotate(180deg);
+}
+
+.input-wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.input-wrapper button {
+  background-color: #d97706;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: fit-content;
+}
+
+.input-wrapper button .add-image-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.input-wrapper > input {
+  font-family: inherit;
+  border: none;
+  border-left: 2px solid rgba(0, 0, 0, 0.09);
+  margin-left: 10px;
+  padding-left: 10px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.input-wrapper > input::placeholder {
+  color: #1a1a17;
+}
+
+@media screen and (max-width: 500px) {
+  .hero-img {
+    height: 400px;
+  }
+
+  .preview-card {
+    max-width: 300px;
+  }
+}
